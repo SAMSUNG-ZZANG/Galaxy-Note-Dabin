@@ -65,7 +65,6 @@ dependencies {
 
     // Dagger-Hilt
     implementation(AndroidXDependencies.hilt)
-    implementation(files("libs/com.skt.Tmap_1.69.jar"))
     kapt(KaptDependencies.hiltCompiler)
 
     // Jetpack Navigation Component
