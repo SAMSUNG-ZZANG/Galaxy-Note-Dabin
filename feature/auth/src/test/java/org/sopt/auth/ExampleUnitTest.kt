@@ -1,4 +1,4 @@
-package org.sopt.androidassignment
+package org.sopt.auth
 
 import org.junit.Assert.assertEquals
 import org.junit.Test
