@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">AndroidAssignment</string>
+    <string name="start_app_transition">start_app</string>
+    <string name="touch_start">터치하여 시작하세요</string>
+    <string name="SOPT">SOPT</string>
+    <string name="id">id</string>
+    <string name="password">pw</string>
+    <string name="log_in">로그인</string>
+    <string name="sign_up">회원가입</string>
+    <string name="name">이름</string>
+    <string name="email">email</string>
+    <string name="start_app_text_transition">start_text_app</string>
+    <string name="fill_id">아이디를 입력해주세요</string>
+    <string name="fill_pass">패스워드를 입력해주세요</string>
+    <string name="fill_name">이름을 입력해주세요</string>
+    <string name="not_have_account">계정이 없으신가요?</string>
+    <string name="git_id">mdb1217</string>
+    <string name="welcome_to_my_profile">Welcome to my profile!</string>
+    <string name="introduce">🌱초보 개발자 문다빈🌱</string>
+    <string name="long_long">길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라길어져라라길어져라길어져라길어라길어져라길어져라길어</string>
+    <string name="is_empty">빈 칸이 있습니다!</string>
 </resources>

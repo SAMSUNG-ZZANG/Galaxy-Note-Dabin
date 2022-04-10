@@ -14,6 +14,10 @@
         <!-- Customize your theme here. -->
         <item name="android:includeFontPadding">false</item>
         <item name="android:windowContentTransitions">true</item>
-        <item name="android:fragmentSharedElementEnterTransition">@</item>
+    </style>
+
+    <style name="CircleImageViewStyle">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
     </style>
 </resources>
