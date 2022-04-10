@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_splash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SplashActivity">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="@dimen/splash_logo_size"
+            android:layout_height="0dp"
+            android:layout_marginTop="100dp"
+            android:scaleType="centerCrop"
+            android:transitionName="@string/start_app_transition"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/CircleImageViewStyle"
+            tools:background="@drawable/ic_launcher_foreground" />
+
+        <TextView
+            android:id="@+id/tv_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="80dp"
+            android:text="@string/touch_start"
+            android:textColor="@color/main_gray"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_sopt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="@string/SOPT"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            android:transitionName="@string/start_app_text_transition"
+            app:layout_constraintEnd_toEndOf="@+id/iv_logo"
+            app:layout_constraintStart_toStartOf="@+id/iv_logo"
+            app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
