@@ -18,6 +18,10 @@ android {
 dependencies {
     implementation(project(":core"))
     implementation(project(":shared"))
+    implementation(project(":feature:auth"))
+    implementation(project(":feature:home"))
+    implementation(project(":data"))
+    implementation(project(":domain"))
 
     // Kotlin
     implementation(KotlinDependencies.kotlin)
@@ -30,6 +34,7 @@ dependencies {
     implementation(AndroidXDependencies.constraintLayout)
     implementation(AndroidXDependencies.legacy)
     implementation(AndroidXDependencies.coroutines)
+    implementation(AndroidXDependencies.roomKtx)
     coreLibraryDesugaring(AndroidXDependencies.desugarLibrary)
 
     // Material Design
@@ -63,6 +68,7 @@ dependencies {
     implementation(ThirdPartyDependencies.glide)
     kapt(KaptDependencies.glideCompiler)
     implementation(ThirdPartyDependencies.coil)
+    implementation(ThirdPartyDependencies.coilGif)
 
     // Http Client Library
     implementation(ThirdPartyDependencies.retrofit)
@@ -77,8 +83,8 @@ dependencies {
     // Automatic Record OpenSource Library List
     implementation(ThirdPartyDependencies.ossLicense)
 
-    // Ted Image Picker
-    implementation(ThirdPartyDependencies.tedImagePicker)
+    // lottie
+    implementation(ThirdPartyDependencies.lottie)
 
     // Paris: Apply Styles Programmatically
     implementation(ThirdPartyDependencies.paris)
