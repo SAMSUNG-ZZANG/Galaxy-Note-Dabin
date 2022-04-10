@@ -43,7 +43,7 @@ class SignInActivity : BindingActivity<ActivitySignInBinding>(R.layout.activity_
 
         binding.btnSignIn.setOnClickListener {
             when (isEtIdEmpty() || isEtPasswordEmpty()) {
-                true -> shortToast(getString(R.string.is_empty))
+                true -> shortToast("아이디/비밀번호를 확인해주세요")
                 else -> startHomeActivity()
             }
         }
@@ -54,6 +54,7 @@ class SignInActivity : BindingActivity<ActivitySignInBinding>(R.layout.activity_
     private fun isEtPasswordEmpty(): Boolean = binding.etPassword.text.isNullOrEmpty()
 
     private fun startHomeActivity() {
+        shortToast("로그인 성공")
         startActivity(Intent(this@SignInActivity, HomeActivity::class.java))
         finish()
     }
