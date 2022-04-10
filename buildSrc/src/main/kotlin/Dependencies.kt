@@ -69,6 +69,7 @@ object ThirdPartyDependencies {
     const val kotlinxSerializationConverter =
         "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:${Versions.kotlinxSerializationConverterVersion}"
     const val coil = "io.coil-kt:coil:${Versions.coilVersion}"
+    const val coilGif = "io.coil-kt:coil-gif:2.0.0-rc02"
     const val timber = "com.jakewharton.timber:timber:${Versions.timberVersion}"
     const val flipper = "com.facebook.flipper:flipper:${Versions.flipperVersion}"
     const val soloader = "com.facebook.soloader:soloader:${Versions.soloaderVersion}"
@@ -80,8 +81,6 @@ object ThirdPartyDependencies {
         "com.squareup.leakcanary:leakcanary-android:${Versions.leakCanaryVersion}"
     const val ossLicense =
         "com.google.android.gms:play-services-oss-licenses:${Versions.ossVersion}"
-    const val tedImagePicker =
-        "io.github.ParkSangGwon:tedimagepicker:${Versions.tedImagePickerVersion}"
     const val paris = "com.airbnb.android:paris:${Versions.parisVersion}"
 }
 

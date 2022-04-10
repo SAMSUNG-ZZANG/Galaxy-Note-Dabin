@@ -33,6 +33,7 @@ object Versions {
     const val retrofitVersion = "2.9.0"
     const val okHttpVersion = "4.9.3"
     const val coilVersion = "1.4.0"
+    const val coilGifVersion = "0.9.5"
     const val kotlinxSerializationConverterVersion = "0.8.0"
     const val junitVersion = "4.13.2"
     const val espressoVersion = "3.4.0"
