@@ -50,6 +50,7 @@
     ```
 
 <br>
+
 - ##### Sign In
 
   - **빈 칸 확인**
@@ -75,21 +76,6 @@
 
 <br>
 
-- ##### Sign In
-
-  - **빈 칸 확인**
-
-    ```kotlin
-    private fun isEtIdEmpty() : Boolean {
-        return binding.etId.text.isNullOrEmpty()
-    }
-    
-    private fun isEtPasswordEmpty() : Boolean {
-        return binding.etPassword.text.isNullOrEmpty()
-    }
-    ```
-    
-    
   - **inputType 패스워드 & hint 속성 활용**
 
     ```xml
@@ -160,7 +146,6 @@
             app:layout_constraintTop_toTopOf="parent">
 
   ```
-  - **DimensionRatio
   
   - **constraintDimensionRatio(1대1 비율)**
 
@@ -197,10 +182,15 @@
     </data>
   </layout>
     ```
-기본 사용법은 위와 같습니다.
+   - 기본 사용법은 위와 같이 결합레이아웃을 만들고 씁니다.
+   - 이번 과제에 저도 데이터 바인딩 사용했습니다.. 물론 결합레이아웃 장점은 못살림..ㅎ
+   - 다양한 표현식을 제공합니다.
   <br>
 
 - **MVVM**
-  패키지 구조를 보면 알 수 있다시피.. 썼어요.. 썼다구요..
 
+  패키지 구조를 보면 알 수 있다시피.. 썼어요.. 썼다구요..
+  사용한 AAC로는 `DataBinding, Room, ViewModel`이 있고, DI로는 `Hilt`를 사용했습니다..!
+  StateFlow를 넣어놓긴했는데... 직접 사용하는 건 다음주 쯤에나.. 할라구여...
+  
 <br>
