@@ -6,7 +6,7 @@ buildscript {
     }
     dependencies {
         classpath("com.android.tools.build:gradle:${Versions.gradleVersion}")
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlinVersion}")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10")
         classpath(ClassPathPlugins.hilt)
         classpath(ClassPathPlugins.navArgs)
         // NOTE: Do not place your application dependencies here; they belong
@@ -18,6 +18,12 @@ allprojects {
     repositories {
         google()
         mavenCentral()
+    }
+}
+
+subprojects {
+    afterEvaluate {
+        project.apply("$rootDir/gradle/common.gradle")
     }
 }
 

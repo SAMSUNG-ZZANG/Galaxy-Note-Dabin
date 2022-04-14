@@ -10,43 +10,19 @@ plugins {
 }
 
 android {
-    compileSdk = Constants.compileSdk
-    buildToolsVersion = "30.0.3"
-
-    defaultConfig {
-        applicationId = Constants.packageName
-        minSdk = Constants.minSdk
-        targetSdk = Constants.targetSdk
-        versionCode = Constants.versionCode
-        versionName = Constants.versionName
-
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-    }
-
-    buildTypes {
-        getByName("release") {
-            isMinifyEnabled = true
-
-            proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
-            )
-        }
-    }
-    compileOptions {
-        sourceCompatibility = Versions.javaVersion
-        targetCompatibility = Versions.javaVersion
-    }
-    kotlinOptions {
-        val options = this as org.jetbrains.kotlin.gradle.dsl.KotlinJvmOptions
-        options.jvmTarget = Versions.jvmVersion
-    }
     buildFeatures {
         dataBinding = true
     }
 }
 
 dependencies {
+    implementation(project(":core"))
+    implementation(project(":shared"))
+    implementation(project(":feature:auth"))
+    implementation(project(":feature:home"))
+    implementation(project(":data"))
+    implementation(project(":domain"))
+
     // Kotlin
     implementation(KotlinDependencies.kotlin)
     implementation(KotlinDependencies.kotlinxSerialization)
@@ -58,6 +34,7 @@ dependencies {
     implementation(AndroidXDependencies.constraintLayout)
     implementation(AndroidXDependencies.legacy)
     implementation(AndroidXDependencies.coroutines)
+    implementation(AndroidXDependencies.roomKtx)
     coreLibraryDesugaring(AndroidXDependencies.desugarLibrary)
 
     // Material Design
@@ -91,6 +68,7 @@ dependencies {
     implementation(ThirdPartyDependencies.glide)
     kapt(KaptDependencies.glideCompiler)
     implementation(ThirdPartyDependencies.coil)
+    implementation(ThirdPartyDependencies.coilGif)
 
     // Http Client Library
     implementation(ThirdPartyDependencies.retrofit)
@@ -105,8 +83,8 @@ dependencies {
     // Automatic Record OpenSource Library List
     implementation(ThirdPartyDependencies.ossLicense)
 
-    // Ted Image Picker
-    implementation(ThirdPartyDependencies.tedImagePicker)
+    // lottie
+    implementation(ThirdPartyDependencies.lottie)
 
     // Paris: Apply Styles Programmatically
     implementation(ThirdPartyDependencies.paris)
