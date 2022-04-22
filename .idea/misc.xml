@@ -6,7 +6,11 @@
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.18813629150390632" />
         <entry key="feature/auth/src/main/res/layout/activity_sign_in.xml" value="0.1" />
         <entry key="feature/auth/src/main/res/layout/activity_sign_up.xml" value="0.14624176025390626" />
-        <entry key="feature/home/src/main/res/layout/activity_home.xml" value="0.18135528564453127" />
+        <entry key="feature/home/src/main/res/layout/activity_home.xml" value="0.26113120656703354" />
+        <entry key="feature/home/src/main/res/layout/fragment_follower.xml" value="0.508947245279948" />
+        <entry key="feature/home/src/main/res/layout/fragment_repository.xml" value="0.24635416666666668" />
+        <entry key="feature/home/src/main/res/layout/item_follower.xml" value="0.3010471204188482" />
+        <entry key="feature/home/src/main/res/layout/item_repository.xml" value="0.377081298828125" />
         <entry key="shared/src/main/res/drawable/rectangle_border_pink_5.xml" value="0.1075" />
         <entry key="shared/src/main/res/drawable/rectangle_fill_gray_5.xml" value="0.1075" />
         <entry key="shared/src/main/res/drawable/rectangle_fill_pink_12.xml" value="0.1365" />
