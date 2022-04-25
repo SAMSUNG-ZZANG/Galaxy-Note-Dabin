@@ -194,3 +194,72 @@
   StateFlow를 넣어놓긴했는데... 직접 사용하는 건 다음주 쯤에나.. 할라구여...
   
 <br>
+
+## :two: Second Week
+
+<table class="tg">
+<tbody>
+    <tr>
+      <td><b>Follower</b></td>
+      <td><b>Repository</b></td>
+    </tr>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/70698151/164737567-789e5d49-8b52-4e31-a1d7-24dba0b7ca9f.png" width="300px"/></td>
+    <td><img src="https://user-images.githubusercontent.com/70698151/164737577-96163819-c766-4974-ae45-e33ecca7fcf0.png"  width="300px"/></td>
+	</tr>
+</tbody>
+</table>
+
+<br>
+
+
+#### 1. Level 1 :baby:
+##### 필수과제 1-1
+- ##### Home 프래그먼트 전환 코드(확장함수로 리플레이스구현)
+    ```kotlin
+        binding.btnFollower.setOnClickListener {
+            replace(R.id.container_home, FollowerFragment())
+        }
+
+        binding.btnRepo.setOnClickListener {
+            replace(R.id.container_home, RepositoryFragment())
+        }
+    ```
+- ##### Repository 리스트 코드
+    ```kotlin
+    private fun initAdapter() {
+        repositoryAdapter = HomeAdapter(requireActivity().layoutInflater, REPO)
+        binding.rvRepository.adapter = repositoryAdapter
+    }
+    ```
+    
+- ##### Follwer 리스트 코드
+    ```kotlin
+    private fun initAdapter() {
+        followerAdapter = HomeAdapter(requireActivity().layoutInflater, HomeAdapter.FOLLOWER)
+        binding.rvFollower.adapter = followerAdapter
+    }
+    ```
+    
+#### 3. Level 3 :baby:
+##### 심화과제 3-1
+BindingActivity, BindingFragment를 사용해 보일러플레이트 축소
+    
+        
+##### 심화과제 3-2
+- DiffUtil 활용해서 변경 적용 효율적으로하기
+    
+class ItemDiffCallback<T : Any>(
+    val onItemsTheSame: (T, T) -> Boolean,
+    val onContentsTheSame: (T, T) -> Boolean
+) : DiffUtil.ItemCallback<T>() {
+    override fun areItemsTheSame(oldItem: T, newItem: T): Boolean = onItemsTheSame(oldItem, newItem)
+    override fun areContentsTheSame(oldItem: T, newItem: T): Boolean =
+        onContentsTheSame(oldItem, newItem)
+}
+    
+    
+    
+    
+    
+    

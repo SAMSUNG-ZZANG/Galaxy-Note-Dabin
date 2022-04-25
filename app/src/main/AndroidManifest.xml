@@ -26,7 +26,7 @@
             android:name="org.sopt.auth.signup.SignUpActivity"
             android:exported="false" />
         <activity
-            android:name="org.sopt.home.HomeActivity"
+            android:name="org.sopt.home.ui.HomeActivity"
             android:exported="false" />
     </application>
 

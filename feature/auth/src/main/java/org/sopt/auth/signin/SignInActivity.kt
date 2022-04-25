@@ -12,7 +12,7 @@ import org.sopt.auth.signup.SignUpActivity
 import org.sopt.core.base.BindingActivity
 import org.sopt.core.util.ext.shortToast
 import org.sopt.core.util.getGifLoader
-import org.sopt.home.HomeActivity
+import org.sopt.home.ui.HomeActivity
 
 @AndroidEntryPoint
 class SignInActivity : BindingActivity<ActivitySignInBinding>(R.layout.activity_sign_in) {
