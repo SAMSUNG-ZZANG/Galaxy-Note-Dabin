@@ -1,7 +1,7 @@
 import org.gradle.api.JavaVersion
 
 object Versions {
-    const val kotlinVersion = "1.6.20"
+    const val kotlinVersion = "1.6.21"
     const val kotlinDateTimeVersion = "0.3.2"
     const val kotlinCoroutinesVersion = "1.6.0"
     const val coreKtxVersion = "1.7.0"
@@ -20,7 +20,7 @@ object Versions {
     const val composeVersion = "1.1.0"
     const val recyclerView = "1.2.1"
 
-    const val gradleVersion = "7.1.2"
+    const val gradleVersion = "7.1.3"
     const val ktlintVersion = "10.2.0"
     const val googleServiceVersion = "4.3.5"
     const val playCoreVersion = "1.10.0"

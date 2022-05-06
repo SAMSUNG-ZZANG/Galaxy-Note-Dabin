@@ -3,17 +3,30 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.19895833333333332" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.18813629150390632" />
-        <entry key="feature/auth/src/main/res/layout/activity_sign_in.xml" value="0.1" />
+        <entry key="feature/auth/src/main/res/layout/activity_sign_in.xml" value="0.12487100103199174" />
         <entry key="feature/auth/src/main/res/layout/activity_sign_up.xml" value="0.14624176025390626" />
+        <entry key="feature/home/src/main/res/drawable/ic_setting.xml" value="0.1325" />
         <entry key="feature/home/src/main/res/layout/activity_home.xml" value="0.26113120656703354" />
-        <entry key="feature/home/src/main/res/layout/fragment_follower.xml" value="0.508947245279948" />
+        <entry key="feature/home/src/main/res/layout/activity_main.xml" value="0.3506622314453125" />
+        <entry key="feature/home/src/main/res/layout/fragment_camera.xml" value="0.20410224828827245" />
+        <entry key="feature/home/src/main/res/layout/fragment_empty.xml" value="0.10218200683593752" />
+        <entry key="feature/home/src/main/res/layout/fragment_follower.xml" value="0.1" />
+        <entry key="feature/home/src/main/res/layout/fragment_home.xml" value="0.18575286865234375" />
+        <entry key="feature/home/src/main/res/layout/fragment_profile.xml" value="0.20993957519531253" />
         <entry key="feature/home/src/main/res/layout/fragment_repository.xml" value="0.24635416666666668" />
-        <entry key="feature/home/src/main/res/layout/item_repository.xml" value="0.377081298828125" />
+        <entry key="feature/home/src/main/res/layout/item_follower.xml" value="0.3457364341085271" />
+        <entry key="feature/home/src/main/res/layout/item_repository.xml" value="0.1" />
+        <entry key="feature/home/src/main/res/menu/menu_main.xml" value="0.43915131672063723" />
         <entry key="shared/src/main/res/drawable/rectangle_border_pink_5.xml" value="0.1075" />
         <entry key="shared/src/main/res/drawable/rectangle_fill_gray_5.xml" value="0.1075" />
         <entry key="shared/src/main/res/drawable/rectangle_fill_pink_12.xml" value="0.1365" />
+        <entry key="shared/src/main/res/drawable/rectangle_fill_pink_8.xml" value="0.133" />
+        <entry key="shared/src/main/res/drawable/rectangle_fill_white_pink_5.xml" value="0.1335" />
+        <entry key="shared/src/main/res/drawable/selector_profile_btn.xml" value="0.1335" />
         <entry key="shared/src/main/res/drawable/selector_sign_in.xml" value="0.1075" />
+        <entry key="shared/src/main/res/font/noto_sans.xml" value="0.16631038905515177" />
       </map>
     </option>
   </component>
