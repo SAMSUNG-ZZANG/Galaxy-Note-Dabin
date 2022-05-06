@@ -319,7 +319,7 @@ class ItemDiffCallback<T : Any>(
 	기타등등...
     ```
 	
-- **둥근 이미지 + 테두리(sh)**
+- **둥근 이미지 + 테두리(ShapeableImageView 활용)**
     ```kotlin
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/iv_owner"
