@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_owner"
+            android:layout_width="@dimen/logo_size"
+            android:layout_height="0dp"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/img_pika"
+            android:padding="3dp"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/CircleImageViewStyle"
+            app:strokeColor="@color/main_pink"
+            app:strokeWidth="3dp" />
+
+        <TextView
+            android:id="@+id/tv_git"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/git_id"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/iv_owner"
+            app:layout_constraintStart_toStartOf="@+id/iv_owner"
+            app:layout_constraintTop_toBottomOf="@+id/iv_owner" />
+
+        <TextView
+            android:id="@+id/tv_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/welcome_to_my_profile"
+            android:textColor="@color/main_pink"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/main_pink"
+            app:layout_constraintEnd_toEndOf="@+id/tv_introduce"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_introduce"
+            app:layout_constraintTop_toBottomOf="@+id/tv_git" />
+
+        <TextView
+            android:id="@+id/tv_introduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/introduce"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_follower"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_profile_btn"
+            android:gravity="center"
+            android:paddingVertical="6dp"
+            android:text="@string/follower"
+            android:textColor="@color/selector_profile_btn"
+            app:layout_constraintEnd_toStartOf="@+id/btn_repo"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btn_repo"
+            app:layout_constraintWidth_percent="0.28" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_repo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/selector_profile_btn"
+            android:gravity="center"
+            android:paddingVertical="6dp"
+            android:text="@string/repository"
+            android:textColor="@color/selector_profile_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn_follower"
+            app:layout_constraintTop_toBottomOf="@+id/tv_introduce"
+            app:layout_constraintWidth_percent="0.28" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/container_home"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_repo" />
+
+        <ImageButton
+            android:id="@+id/ib_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/ic_setting"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
