@@ -16,6 +16,71 @@
         <item name="android:windowContentTransitions">true</item>
     </style>
 
+    <style name="header_h7_regular" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">@font/noto_sans_kr_regular</item>
+    </style>
+
+    <style name="header_h1_bold" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/noto_sans_cjk_kr_bold</item>
+    </style>
+
+    <style name="header_h2_bold" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/noto_sans_kr_bold</item>
+    </style>
+
+    <style name="header_h3_medium" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/noto_sans_kr_medium</item>
+    </style>
+
+    <style name="header_h4_bold" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/noto_sans_kr_bold</item>
+    </style>
+
+    <style name="header_h6_bold" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/noto_sans_cjk_kr_bold</item>
+    </style>
+
+    <style name="header_h6_regular" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">@font/noto_sans_kr_regular</item>
+    </style>
+
+    <style name="header_h7_bold" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/noto_sans_kr_bold</item>
+    </style>
+
+    <style name="header_h8_regular" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/noto_sans_kr_regular</item>
+    </style>
+
+    <style name="body_b1_medium" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">@font/noto_sans_kr_medium</item>
+    </style>
+
+    <style name="body_b2_regular" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/noto_sans_kr_regular</item>
+    </style>
+
+    <style name="body_b4_medium" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">11sp</item>
+        <item name="android:fontFamily">@font/noto_sans_kr_medium</item>
+    </style>
+
+    <style name="body_b5_regular" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">11sp</item>
+        <item name="android:fontFamily">@font/noto_sans_kr_regular</item>
+    </style>
+
     <style name="CircleImageViewStyle">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">50%</item>

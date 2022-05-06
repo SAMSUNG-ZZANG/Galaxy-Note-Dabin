@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="splash_logo_size">230dp</dimen>
-    <dimen name="login_logo_size">100dp</dimen>
+    <dimen name="logo_size">100dp</dimen>
     <dimen name="item_image_size">120dp</dimen>
 </resources>
