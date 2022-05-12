@@ -12,7 +12,7 @@ import org.sopt.auth.signup.SignUpActivity
 import org.sopt.core.base.BindingActivity
 import org.sopt.core.util.ext.shortToast
 import org.sopt.core.util.getGifLoader
-import org.sopt.home.ui.HomeActivity
+import org.sopt.home.ui.MainActivity
 
 @AndroidEntryPoint
 class SignInActivity : BindingActivity<ActivitySignInBinding>(R.layout.activity_sign_in) {
@@ -55,7 +55,7 @@ class SignInActivity : BindingActivity<ActivitySignInBinding>(R.layout.activity_
 
     private fun startHomeActivity() {
         shortToast("로그인 성공")
-        startActivity(Intent(this@SignInActivity, HomeActivity::class.java))
+        startActivity(Intent(this@SignInActivity, MainActivity::class.java))
         finish()
     }
 }

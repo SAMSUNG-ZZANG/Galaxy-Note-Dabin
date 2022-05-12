@@ -12,14 +12,18 @@
         android:layout_height="wrap_content"
         android:padding="12dp">
 
-        <ImageView
+        <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/iv_profile"
             android:layout_width="@dimen/item_image_size"
             android:layout_height="0dp"
+            android:padding="3dp"
             android:src="@drawable/img_pika"
             app:layout_constraintDimensionRatio="1:1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/CircleImageViewStyle"
+            app:strokeColor="@color/main_pink"
+            app:strokeWidth="3dp" />
 
         <TextView
             android:id="@+id/tv_name"
@@ -27,9 +31,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginTop="12dp"
+            android:textAppearance="@style/header_h2_bold"
             android:textColor="@color/main_pink"
-            android:textSize="20sp"
-            android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/iv_profile"
             app:layout_constraintTop_toTopOf="@+id/iv_profile"
             tools:text="@string/SOPT" />

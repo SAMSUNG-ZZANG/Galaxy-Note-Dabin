@@ -21,4 +21,10 @@
     <string name="is_empty">빈 칸이 있습니다!</string>
     <string name="follower">팔로워\n목록</string>
     <string name="repository">레포지토리\n목록</string>
+    <string name="ready">준비중입니다</string>
+    <string name="attachment">첨부하기</string>
+    <string-array name="tab_label">
+        <item>팔로잉</item>
+        <item>팔로워</item>
+    </string-array>
 </resources>
